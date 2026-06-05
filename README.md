@@ -6,6 +6,7 @@
 **STATISTICAL ANALYSIS — DASHBOARD BITCOIN**
 
 **A. STATISTIK DESKRIPTIF — Volatilitas Harian Bitcoin**
+
 Analisis dilakukan pada kolom perubahan harga harian (%).
 - Rata-rata (mean) perubahan harian  : ~0,00% (mendekati nol)
 - Median                              : sedikit positif, dekat nol
@@ -20,25 +21,30 @@ dan terdapat hari-hari dengan perubahan sangat ekstrem. Artinya volatilitas
 toleransi risiko yang besar dan tidak mengandalkan pergerakan jangka pendek.
 
 **B. STATISTIK INFERENSIAL — Uji T Dua Sampel Independen**
+
 Tujuan: Menguji apakah rata-rata perubahan harian tahun 2025 (bull market)
 berbeda signifikan dibanding tahun 2022 (bear market).
 
 Hipotesis:
+
 - H0 : Tidak ada perbedaan rata-rata perubahan harian antara 2025 dan 2022.
 - H1 : Ada perbedaan rata-rata perubahan harian antara 2025 dan 2022.
 
 Tingkat signifikansi (alpha) = 0,05
 
 Hasil uji (Welch's two-sample t-test):
+
 - Rata-rata 2025 :  0,006%
 - Rata-rata 2022 : -0,224%
 - t-statistic    :  1,0999
 - p-value        :  0,2718
 
 Keputusan:
+
 p-value (0,2718) >= alpha (0,05)  ->  Gagal menolak H0
 
 **Kesimpulan:**
+
 Tidak ada perbedaan rata-rata perubahan harian yang signifikan secara
 statistik antara tahun 2025 dan 2022. Artinya perbedaan antara pasar
 bullish dan bearish lebih banyak terletak pada arah tren jangka panjang
