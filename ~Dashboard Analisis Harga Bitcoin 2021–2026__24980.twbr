@@ -1,0 +1,1126 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <PatternedLineMarks />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='classic' />
+  <datasources>
+    <datasource caption='bitcoin_clean' inline='true' name='federated.045p62a1ttoh3y1e49nb502gpu7i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bitcoin_clean' name='textscan.18ap6gf0o68lew14v2l4s02lac8y'>
+            <connection class='textscan' directory='C:/Milestones/m2' filename='bitcoin_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18ap6gf0o68lew14v2l4s02lac8y' name='bitcoin_clean.csv' table='[bitcoin_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Price' ordinal='1' />
+            <column datatype='real' name='Open' ordinal='2' />
+            <column datatype='real' name='High' ordinal='3' />
+            <column datatype='real' name='Low' ordinal='4' />
+            <column datatype='real' name='Volume' ordinal='5' />
+            <column datatype='real' name='Change' ordinal='6' />
+            <column datatype='integer' name='Year' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Change]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Change</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[bitcoin_clean.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Abs Change' datatype='real' name='[Abs_Change]' role='measure' type='quantitative' />
+      <column caption='Mean Change' datatype='real' name='[Calculation_2066816082468866]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Change])' />
+      </column>
+      <column caption='Median Change' datatype='real' name='[Calculation_2066816082636803]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MEDIAN([Change])' />
+      </column>
+      <column caption='Std Dev Change' datatype='real' name='[Calculation_2066816082767876]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([Change])' />
+      </column>
+      <column caption='Min Change' datatype='real' name='[Calculation_2066816082993157]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN([Change])' />
+      </column>
+      <column caption='Max Change' datatype='real' name='[Calculation_2066816083116038]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([Change])' />
+      </column>
+      <column caption='Range Change' datatype='real' name='[Calculation_2066816083214343]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([Change]) - MIN([Change])' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Change (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Change]' peg='0' size='1.09' />
+      </column>
+      <column aggregation='Sum' caption='Change (copy)' datatype='real' name='[Change (copy)_2066816010268673]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Change]' />
+      </column>
+      <column datatype='real' name='[Change]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Volume]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='bitcoin_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[bitcoin_clean.csv_291C788370874167A490596B97CA29F6]' role='measure' type='quantitative' />
+      <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Volume]' derivation='Avg' name='[avg:Volume:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Volume]' derivation='None' name='[none:Volume:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Price]' derivation='Sum' name='[sum:Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Volume]' derivation='Sum' name='[sum:Volume:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Year)' hidden='true' name='[Action (Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Year:ok]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Price:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[sum:Price:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Volume:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Volume:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[sum:Volume:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Year:ok]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>2026</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>2021</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='bitcoin_clean.csv' id='bitcoin_clean.csv_291C788370874167A490596B97CA29F6'>
+            <properties context=''>
+              <relation connection='textscan.18ap6gf0o68lew14v2l4s02lac8y' name='bitcoin_clean.csv' table='[bitcoin_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='Price' ordinal='1' />
+                  <column datatype='real' name='Open' ordinal='2' />
+                  <column datatype='real' name='High' ordinal='3' />
+                  <column datatype='real' name='Low' ordinal='4' />
+                  <column datatype='real' name='Volume' ordinal='5' />
+                  <column datatype='real' name='Change' ordinal='6' />
+                  <column datatype='integer' name='Year' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_7089D947DBDF45A1A61B4E7C96571A24]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard Analisis Harga Bitcoin 2021–2026' type='sheet' worksheet='Rata-Rata Harga per Tahun (Bar Chart)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard Analisis Harga Bitcoin 2021–2026' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Distribusi Perubahan Harian'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column aggregation='None' datatype='integer' name='[Change (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Change]' peg='0' size='1.09' />
+            </column>
+            <column datatype='real' name='[Change]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Change]' derivation='Count' name='[cnt:Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Change (bin)]' derivation='None' name='[none:Change (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.045p62a1ttoh3y1e49nb502gpu7i].[cnt:Change:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.045p62a1ttoh3y1e49nb502gpu7i].[cnt:Change:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#e157594b' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-line-pattern' value='solid' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.045p62a1ttoh3y1e49nb502gpu7i].[cnt:Change:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-line-pattern' value='solid' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.045p62a1ttoh3y1e49nb502gpu7i].[cnt:Change:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-transparency' value='78' />
+                <format attr='mark-line-pattern' value='solid' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.045p62a1ttoh3y1e49nb502gpu7i].[cnt:Change:qk] + [federated.045p62a1ttoh3y1e49nb502gpu7i].[cnt:Change:qk])</rows>
+        <cols>[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Change (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[Change (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{AECD02DA-FE5E-4714-B0F0-81523A5E784D}' />
+    </worksheet>
+    <worksheet name='Rata-Rata Harga per Tahun (Bar Chart)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:qk]' included-values='in-range'>
+            <min>2021</min>
+            <max>2026</max>
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Price:qk]</rows>
+        <cols>[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{B52590F9-34FF-438D-B9B9-307634A235C7}' />
+    </worksheet>
+    <worksheet name='Statistik Deskriptif: Box Plot Volatilitas Harian'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column datatype='real' name='[Change]' role='measure' type='quantitative' />
+            <column-instance column='[Change]' derivation='None' name='[none:Change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Change]' derivation='Sum' name='[sum:Change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Change:qk]' included-values='in-range'>
+            <min>-15.630000000000001</min>
+            <max>19.41</max>
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Change:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[sum:Change:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[sum:Change:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.045p62a1ttoh3y1e49nb502gpu7i].[sum:Change:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{687A7CB7-C9A5-499D-93CD-F4F5B3C11B48}' />
+    </worksheet>
+    <worksheet name='Statistik Deskriptif: Volatilitas Harian (Perubahan % Harian)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column caption='Mean Change' datatype='real' name='[Calculation_2066816082468866]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Change])' />
+            </column>
+            <column caption='Median Change' datatype='real' name='[Calculation_2066816082636803]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MEDIAN([Change])' />
+            </column>
+            <column caption='Std Dev Change' datatype='real' name='[Calculation_2066816082767876]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([Change])' />
+            </column>
+            <column caption='Min Change' datatype='real' name='[Calculation_2066816082993157]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN([Change])' />
+            </column>
+            <column caption='Max Change' datatype='real' name='[Calculation_2066816083116038]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([Change])' />
+            </column>
+            <column caption='Range Change' datatype='real' name='[Calculation_2066816083214343]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([Change]) - MIN([Change])' />
+            </column>
+            <column datatype='real' name='[Change]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_2066816082468866]' derivation='User' name='[usr:Calculation_2066816082468866:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2066816082636803]' derivation='User' name='[usr:Calculation_2066816082636803:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2066816082767876]' derivation='User' name='[usr:Calculation_2066816082767876:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2066816082993157]' derivation='User' name='[usr:Calculation_2066816082993157:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2066816083116038]' derivation='User' name='[usr:Calculation_2066816083116038:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2066816083214343]' derivation='User' name='[usr:Calculation_2066816083214343:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[usr:Calculation_2066816083116038:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[usr:Calculation_2066816082468866:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[usr:Calculation_2066816082636803:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[usr:Calculation_2066816082993157:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[usr:Calculation_2066816083214343:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.045p62a1ttoh3y1e49nb502gpu7i].[usr:Calculation_2066816082767876:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[:Measure Names]</column>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.045p62a1ttoh3y1e49nb502gpu7i].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CA1840AA-0E72-471B-99D8-B7C97E994226}' />
+    </worksheet>
+    <worksheet name='Statistik Inferensial: Perbandingan 2022 vs 2025'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]</column>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.045p62a1ttoh3y1e49nb502gpu7i].[mn:Date:qk]' field-type='quantitative' max='14' min='0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Price:qk]' field-type='quantitative' max='124060.41865051343' min='158.00905632537524' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Price:qk]</rows>
+        <cols>[federated.045p62a1ttoh3y1e49nb502gpu7i].[mn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{FA8B3C34-133C-43A6-8110-03990A6C4AF9}' />
+    </worksheet>
+    <worksheet name='Tren Harga (Line Chart)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Price:qk]</rows>
+        <cols>[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{3F9D3788-E19F-470F-888D-BDD39C523AE6}' />
+    </worksheet>
+    <worksheet name='Volume vs. Perubahan (Scatter Plot)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+            <column datatype='real' name='[Change]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Volume]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Volume]' derivation='Avg' name='[avg:Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Change]' derivation='Sum' name='[sum:Change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.045p62a1ttoh3y1e49nb502gpu7i].[sum:Change:qk]</rows>
+        <cols>[federated.045p62a1ttoh3y1e49nb502gpu7i].[avg:Volume:qk]</cols>
+      </table>
+      <simple-id uuid='{AD83EA69-5AFF-48F8-B73A-31504F59C1D0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Analisis Harga Bitcoin 2021–2026' type='storyboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98014' id='1' param='vert' removable='false' type-v2='layout-flow' w='99150' x='425' y='993'>
+            <zone h='5583' id='3' type-v2='title' w='99150' x='425' y='993' />
+            <zone h='12531' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99150' x='425' y='6576' />
+            <zone h='79900' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99150' x='425' y='19107'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='(What/When) Bagaimana tren harga penutupan Bitcoin dari waktu ke waktu (2021–2026)?' captured-sheet='Dashboard Analisis Harga Bitcoin 2021–2026' id='1' />
+                  <story-point caption='(How) Berapa rata-rata harga Bitcoin tiap tahun, dan tahun mana yang tertinggi?' captured-sheet='Dashboard Analisis Harga Bitcoin 2021–2026' id='3' />
+                  <story-point caption='(How) Bagaimana sebaran persentase perubahan harga harian Bitcoin?' captured-sheet='Dashboard Analisis Harga Bitcoin 2021–2026' id='4' />
+                  <story-point caption='(What) Apakah volume perdagangan berhubungan dengan besarnya perubahan harga harian?' captured-sheet='Dashboard Analisis Harga Bitcoin 2021–2026' id='5' />
+                  <story-point caption='(How) Seberapa besar volatilitas (risiko) harian Bitcoin? (Statistik Deskriptif)' captured-sheet='Dashboard Analisis Harga Bitcoin 2021–2026' id='6' />
+                  <story-point caption='(Why) Apakah rata-rata perubahan harian 2025 berbeda signifikan dari 2022? (Statistik Inferensial)' captured-sheet='Dashboard Analisis Harga Bitcoin 2021–2026' id='2'>
+                    <currentDeltas>
+                      <worksheet name='Distribusi Perubahan Harian'>
+                        <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+                          <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Statistik Deskriptif: Volatilitas Harian (Perubahan % Harian)'>
+                        <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+                          <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Statistik Inferensial: Perbandingan 2022 vs 2025'>
+                        <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+                          <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Tren Harga (Line Chart)'>
+                        <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+                          <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Volume vs. Perubahan (Scatter Plot)'>
+                        <filter class='categorical' column='[federated.045p62a1ttoh3y1e49nb502gpu7i].[Action (Year)]'>
+                          <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action1_7089D947DBDF45A1A61B4E7C96571A24]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{776D8740-1205-4966-8CC6-EF63DCD6CB08}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard Analisis Harga Bitcoin 2021–2026'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='bitcoin_clean' name='federated.045p62a1ttoh3y1e49nb502gpu7i' />
+      </datasources>
+      <datasource-dependencies datasource='federated.045p62a1ttoh3y1e49nb502gpu7i'>
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97982' id='21' param='vert' type-v2='layout-flow' w='98258' x='871' y='1009'>
+            <zone h='7062' id='22' type-v2='title' w='98258' x='871' y='1009'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90920' id='15' param='horz' type-v2='layout-flow' w='98258' x='871' y='8071'>
+              <zone h='90920' id='8' param='horz' type-v2='layout-flow' w='80829' x='871' y='8071'>
+                <zone h='90920' id='6' type-v2='layout-basic' w='80829' x='871' y='8071'>
+                  <zone h='48930' id='10' name='Distribusi Perubahan Harian' w='26941' x='871' y='50061'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48930' id='11' name='Volume vs. Perubahan (Scatter Plot)' w='26945' x='54755' y='50061'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41990' id='12' name='Tren Harga (Line Chart)' w='26941' x='871' y='8071'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41990' id='13' name='Rata-Rata Harga per Tahun (Bar Chart)' w='42975' x='38725' y='8071'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41990' id='25' name='Statistik Deskriptif: Volatilitas Harian (Perubahan % Harian)' w='10913' x='27812' y='8071'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48930' id='26' name='Statistik Inferensial: Perbandingan 2022 vs 2025' w='26943' x='27812' y='50061'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='90920' id='14' is-fixed='true' param='vert' type-v2='layout-flow' w='17429' x='81700' y='8071'>
+                <zone fixed-size='119' h='16015' id='16' is-fixed='true' mode='checkdropdown' name='Rata-Rata Harga per Tahun (Bar Chart)' param='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]' type-v2='filter' values='database' w='17429' x='81700' y='8071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='22573' id='27' name='Statistik Inferensial: Perbandingan 2022 vs 2025' pane-specification-id='0' param='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]' type-v2='color' w='17429' x='81700' y='24086'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98014' id='34' param='vert' type-v2='layout-flow' w='99150' x='425' y='993'>
+                <zone h='6948' id='22' type-v2='title' w='99150' x='425' y='993'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42059' id='12' is-fixed='true' name='Tren Harga (Line Chart)' w='30215' x='425' y='7941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42059' id='25' is-fixed='true' name='Statistik Deskriptif: Volatilitas Harian (Perubahan % Harian)' w='12240' x='30640' y='7941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='119' h='15757' id='16' mode='checkdropdown' name='Rata-Rata Harga per Tahun (Bar Chart)' param='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]' type-v2='filter' values='database' w='8502' x='91073' y='7941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42059' id='13' is-fixed='true' name='Rata-Rata Harga per Tahun (Bar Chart)' w='48193' x='42880' y='7941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49007' id='10' is-fixed='true' name='Distribusi Perubahan Harian' w='30215' x='425' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49007' id='26' is-fixed='true' name='Statistik Inferensial: Perbandingan 2022 vs 2025' w='30217' x='30640' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22209' id='27' name='Statistik Inferensial: Perbandingan 2022 vs 2025' pane-specification-id='0' param='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]' type-v2='color' w='8502' x='91073' y='23698'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49007' id='11' is-fixed='true' name='Volume vs. Perubahan (Scatter Plot)' w='30216' x='60857' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4A10A2B3-90E9-4AFA-92F6-3F04DDC1B426}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' name='Tren Harga (Line Chart)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EFB6059-D887-4F2F-B4A9-AED0FFEC5F26}' />
+    </window>
+    <window class='worksheet' name='Rata-Rata Harga per Tahun (Bar Chart)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{068CA837-CC29-4AF3-BE91-828875F4A8C4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Distribusi Perubahan Harian'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E3CBD43A-943F-4C59-AE3C-55EAE320E817}' />
+    </window>
+    <window class='worksheet' name='Volume vs. Perubahan (Scatter Plot)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46DA9D3A-4F59-4934-832A-6D31FF29D8F2}' />
+    </window>
+    <window class='worksheet' name='Statistik Deskriptif: Volatilitas Harian (Perubahan % Harian)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7CA82D97-1DEF-42B8-8A3C-19ADBC548287}' />
+    </window>
+    <window class='worksheet' name='Statistik Deskriptif: Box Plot Volatilitas Harian'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9DFBF47B-37FC-430B-A6F0-26B649205E79}' />
+    </window>
+    <window class='worksheet' name='Statistik Inferensial: Perbandingan 2022 vs 2025'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.045p62a1ttoh3y1e49nb502gpu7i].[none:Year:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{246CE19B-8DA9-4DBF-9AC0-A28D570B4E3A}' />
+    </window>
+    <window class='dashboard' name='Dashboard Analisis Harga Bitcoin 2021–2026'>
+      <viewpoints>
+        <viewpoint name='Distribusi Perubahan Harian'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Rata-Rata Harga per Tahun (Bar Chart)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Statistik Deskriptif: Volatilitas Harian (Perubahan % Harian)' />
+        <viewpoint name='Statistik Inferensial: Perbandingan 2022 vs 2025'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tren Harga (Line Chart)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Volume vs. Perubahan (Scatter Plot)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{6A4D0037-9857-4B2F-8061-116EE1C8555E}' />
+    </window>
+    <window class='dashboard' name='Analisis Harga Bitcoin 2021–2026'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{4DED9957-BC37-4257-A345-73EAD2E7760A}' />
+    </window>
+  </windows>
+</workbook>
